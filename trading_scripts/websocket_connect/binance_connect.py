@@ -64,6 +64,6 @@ if __name__ == "__main__":
     ws_thread = threading.Thread(target=connect_to_websocket)
     ws_thread.start()
 
-    # Обновляем listen_key каждые 45 минут
+    # Обновляем listen_key интервал 45 минут
     renew_thread = threading.Thread(target=renew_key_periodically)
     renew_thread.start()

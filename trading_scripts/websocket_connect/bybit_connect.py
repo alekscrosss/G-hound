@@ -25,7 +25,7 @@ def on_open(ws):
             "publicTrade.BTCUSDT"
         ]
     }))
-    # Подписываемся на поток свечей
+
     ws.send(json.dumps({
         "op": "subscribe",
         "args": [
